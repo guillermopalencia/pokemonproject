@@ -1,0 +1,9 @@
+.poke-card{
+    max-width: 200px;
+}
+
+.poke-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+
+}
