@@ -1,9 +1,22 @@
 .poke-card{
     max-width: 200px;
+    background-color: bisque;
+    margin-bottom: 1vw;
 }
 
 .poke-container{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
 
+.poke-img{
+    border: solid black 1px;
+    max-width: 170px;
+    margin: 20px;
+}
+
+.poke-header{
+    padding-bottom: 5px;
 }
