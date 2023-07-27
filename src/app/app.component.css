@@ -20,3 +20,8 @@
 .poke-header{
     padding-bottom: 5px;
 }
+
+.poke-squad{
+    display: grid;
+grid-template-columns: auto auto auto auto auto;
+}

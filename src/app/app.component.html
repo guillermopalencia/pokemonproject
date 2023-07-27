@@ -1,5 +1,18 @@
 
   <h1>Pokeverse</h1>
+
+  <h1>My Squad (0)</h1>
+<div class="poke-squad" >
+  <div *ngFor="let squad of squads; let i = index">
+  <mat-card class="poke-card">
+    <img mat-card-image src="{{squad}}.png" alt="pic of pokemon" class="poke-img">
+    <mat-card-header class="poke-header">
+    </mat-card-header>
+    </mat-card>
+  </div>
+</div>
+
+<h1>All Pokemon</h1>
 <div class="poke-container">
   <div *ngFor='let pokemon of pokemon.results; let i = index' [attr.id]="pokemon.id">
     <mat-card class="poke-card">
@@ -10,7 +23,7 @@
       </mat-card-title>
     </mat-card-header>
     <mat-card-actions>
-      <button mat-button>
+      <button mat-button (click)="add(i+1)">
         Add To Team!
       </button>
     </mat-card-actions>
